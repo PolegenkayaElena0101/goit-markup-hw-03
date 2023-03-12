@@ -1,0 +1,241 @@
+body {
+  background-color: var(--main-background-color);
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+}
+:root {
+  --link-color: #4d5ae5;
+  --main-background-color: #ffffff;
+  --main-text-color: #434455;
+  --text-nav-card-color: #2e2f42;
+  --hero-footer-background-color: #2e2f42;
+  --about-background-color: #f4f4fd;
+  --btn-background-color: #404bbf;
+}
+
+/* Основная навигация */
+.link {
+  text-decoration: none;
+}
+
+.header-logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--link-color);
+}
+.color-studio {
+  color: var(--text-nav-card-color);
+}
+
+.header-link {
+  line-height: 1.5;
+
+  color: var(--text-nav-card-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--btn-background-color);
+}
+.address-list {
+  font-style: normal;
+}
+.visit {
+  list-style-type: none;
+  line-height: 1.5;
+}
+.list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-style: normal;
+}
+.header-contact {
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--btn-background-color);
+}
+
+.header-item {
+  list-style-type: none;
+}
+/* Секция герой */
+
+.hero {
+  background-color: var(--hero-footer-background-color);
+}
+.hero-text {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-background-color);
+}
+.hero-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--link-color);
+  color: var(--main-background-color);
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--btn-background-color);
+}
+.hero-button {
+  cursor: pointer;
+}
+/* Секция со скрытым заголовком Наша стратегия*/
+.features {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+
+  color: var(--text-nav-card-color);
+}
+.hide {
+  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.features-work-list {
+  list-style-type: none;
+}
+.features-text {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+/* Секция что мы делаем*/
+
+.work-tame {
+  list-style-type: none;
+}
+.work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: var(--text-nav-card-color);
+}
+/* Члены команды*/
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--text-nav-card-color);
+}
+.about {
+  background-color: var(--about-background-color);
+}
+.our-team {
+  list-style-type: none;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+.team-work {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-nav-card-color);
+}
+.special {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+/*Футер*/
+.footer {
+  background-color: var(--hero-footer-background-color);
+}
+
+.studio {
+  color: var(--about-background-color);
+}
+
+.footer-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(231, 233, 252, 1);
+}
+
+/*Портфолио*/
+
+/*Навигационные кнопки после хедера*/
+.navigation list {
+  list-style-type: none;
+}
+.nav-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--about-background-color);
+  color: var(--link-color);
+}
+.nav-btn:hover,
+.nav-btn:focus {
+  background-color: var(--btn-background-color);
+  color: var(--main-background-color);
+}
+.nav-btn {
+  cursor: pointer;
+}
+/*Наш сервис*/
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+.service {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--text-nav-card-color);
+}
+.service-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
