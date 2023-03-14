@@ -26,6 +26,14 @@
   text-decoration: none;
 }
 /* лого стили */
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 72px;
+}
+
 .conteiner {
   width: 1158px;
   padding-left: 15px;
@@ -37,6 +45,11 @@
   display: flex;
   margin-left: 77px;
   align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
 }
 .conteiner header-container {
   display: flex;
@@ -55,6 +68,7 @@
 }
 .color-studio {
   color: var(--text-nav-card-color);
+  margin-right: 76px;
 }
 
 /* навигация */
@@ -86,6 +100,8 @@
 .visit {
   list-style-type: none;
   line-height: 1.5;
+  display: flex;
+  flex-direction: row;
 }
 .visit list {
   display: flex;
@@ -102,6 +118,7 @@
 }
 .header-contact {
   line-height: 1.5;
+  margin-right: 40px;
   color: var(--main-text-color);
 }
 
