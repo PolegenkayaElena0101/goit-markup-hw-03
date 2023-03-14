@@ -1,8 +1,17 @@
-body {
+.html {
+  box-sizing: border-box;
+}
+*,
+*::after {
+  box-sizing: inherit;
+}
+
+.body {
   background-color: var(--main-background-color);
   font-family: "Roboto", sans-serif;
   color: #434455;
 }
+
 :root {
   --link-color: #4d5ae5;
   --main-background-color: #ffffff;
@@ -12,12 +21,27 @@ body {
   --about-background-color: #f4f4fd;
   --btn-background-color: #404bbf;
 }
-
 /* Основная навигация */
 .link {
   text-decoration: none;
 }
-
+/* лого стили */
+.conteiner {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-nav list {
+  display: flex;
+  margin-left: 77px;
+  align-items: center;
+}
+.conteiner header-container {
+  display: flex;
+  align-items: center;
+}
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -33,6 +57,15 @@ body {
   color: var(--text-nav-card-color);
 }
 
+/* навигация */
+.header-list {
+  margin: 0px;
+  padding: 0;
+  display: flex;
+}
+.header-list > li:not(:first-child) {
+  margin-left: 40px;
+}
 .header-link {
   line-height: 1.5;
 
@@ -43,6 +76,10 @@ body {
 .header-link:focus {
   color: var(--btn-background-color);
 }
+
+.menu-contacts {
+  margin-left: auto;
+}
 .address-list {
   font-style: normal;
 }
@@ -50,8 +87,13 @@ body {
   list-style-type: none;
   line-height: 1.5;
 }
+.visit list {
+  display: flex;
+}
 .list {
   font-weight: 500;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 1.5;
   color: var(--main-text-color);
@@ -70,25 +112,37 @@ body {
 
 .header-item {
   list-style-type: none;
+  margin-right: 40px;
 }
 /* Секция герой */
 
 .hero {
+  padding: 192px 0px;
+  text-align: center;
+  min-height: 607px;
   background-color: var(--hero-footer-background-color);
 }
 .hero-text {
+  margin-top: 0;
+  margin-bottom: 48px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
+
   letter-spacing: 0.02em;
   color: var(--main-background-color);
 }
 .hero-button {
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  min-width: 169px;
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
+  padding: 16px 32px;
+  border-radius: 4px;
   letter-spacing: 0.04em;
   background-color: var(--link-color);
   color: var(--main-background-color);
@@ -101,7 +155,14 @@ body {
   cursor: pointer;
 }
 /* Секция со скрытым заголовком Наша стратегия*/
+
+.section-hiden {
+  padding-top: 108px;
+}
+
 .features {
+  margin: 0;
+  padding: 0;
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 0.02em;
@@ -111,42 +172,71 @@ body {
 }
 .hide {
   visibility: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  text-align: center;
-  letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
 }
 
-.features-work-list {
+.features-work list {
   list-style-type: none;
 }
+
+.features-work {
+  display: flex;
+
+  padding: 0;
+  margin: 0;
+}
+.features-work > li:not(:first-child) {
+  margin-left: 24px;
+}
+
+.relevance {
+  width: 264px 24px;
+  justify-content: space-between;
+}
 .features-text {
-  font-size: 16px;
+  margin: 0;
   line-height: 1.5;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
 /* Секция что мы делаем*/
-
+.do {
+  padding-bottom: 120px;
+}
 .work-tame {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 .work {
   font-weight: 700;
   font-size: 36px;
+  padding: 72px;
+  margin: 0;
+  margin-bottom: 72px;
   line-height: 1.11;
+
   text-align: center;
   text-transform: capitalize;
 
   color: var(--text-nav-card-color);
 }
+
 /* Члены команды*/
 .team {
   font-weight: 700;
   font-size: 36px;
+  padding-bottom: 72px;
+  padding-top: 120px;
+  margin: 0px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
@@ -155,22 +245,40 @@ body {
 }
 .about {
   background-color: var(--about-background-color);
+
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .our-team {
   list-style-type: none;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 .team-work {
   font-weight: 500;
+  margin: 0;
+  margin-bottom: 8px;
+  text-align: center;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--text-nav-card-color);
 }
+
+.team-card > img {
+  display: block;
+}
+
 .special {
   font-size: 16px;
+  margin: 0;
+  padding-bottom: 0px;
   line-height: 1.5;
+  text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
 }
@@ -178,6 +286,8 @@ body {
 /*Футер*/
 .footer {
   background-color: var(--hero-footer-background-color);
+  padding: 100px;
+  padding-bottom: 100px;
 }
 
 .studio {
@@ -186,23 +296,42 @@ body {
 
 .footer-text {
   font-family: "Roboto", sans-serif;
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 17, 5px;
   color: rgba(231, 233, 252, 1);
 }
 
 /*Портфолио*/
-
+.portfolio {
+  padding-top: 93px;
+  padding-bottom: 120px;
+}
 /*Навигационные кнопки после хедера*/
-.navigation list {
+.navigation {
   list-style-type: none;
+  display: flex;
+  margin-left: 320px;
+  margin-bottom: 72px;
+}
+.navigation > li:not(:first-child) {
+  margin-left: 24px;
 }
 .nav-btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  text-align: center;
+  display: inline-block;
+
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  padding: 12px 24px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  text-align: center;
   background-color: var(--about-background-color);
   color: var(--link-color);
 }
@@ -215,21 +344,39 @@ body {
   cursor: pointer;
 }
 /*Наш сервис*/
+.our-team-portfolio {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
 
-.link {
+.our-link .link {
   text-decoration: none;
 }
 
 .list {
   list-style-type: none;
+
   line-height: 1.11;
   letter-spacing: 0.02em;
 }
+
+.our-works {
+  padding: 32px 16px;
+
+  border: 0.5px solid rgba(244, 244, 253, 1);
+}
+
 .service {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin: 0;
+  margin-bottom: 8px;
   color: var(--text-nav-card-color);
 }
 .service-text {
@@ -237,5 +384,6 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 0;
   color: var(--main-text-color);
 }
