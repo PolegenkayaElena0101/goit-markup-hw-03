@@ -21,7 +21,12 @@
   font-family: "Roboto", sans-serif;
   color: #434455;
 }
-.img {
+
+ul, p, h2 {
+  margin: 0;
+  padding: 0;
+}
+img {
   width: 100%;
   height: auto;
   display: block;
@@ -58,7 +63,7 @@
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
-  margin-left: 76px;
+  
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -231,7 +236,7 @@
   margin-right: 0px;
 }
 .features {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .features-text {
   font-weight: 400;
@@ -287,7 +292,7 @@
   line-height: 1.11;
   letter-spacing: 0.02em;
   display: flex;
-  gap: 24px;
+  gap: 32px;
 }
 .team-work {
   font-weight: 500;
@@ -300,12 +305,9 @@
   color: var(--text-nav-card-color);
 }
 
-.team-card > img {
-  display: block;
-}
+
 .specification {
   padding-top: 32px;
-
   padding-bottom: 32px;
   background-color: var(--main-background-color);
 }
